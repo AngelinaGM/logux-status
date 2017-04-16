@@ -157,16 +157,15 @@ This feature will be useful for application users to be aware of
 current Logux server connection status. To make sure that they won’t
 lose any unsaved data because of server malfunctioning.
 
-In the second argument you can pass object to configure widget appearance
-in different states.
+Use second argument to configure widget appearance in different states.
 
-First of all you must define base styles for widget and styles
-in different states. Icon for widget injecting as background image,
+First of all you must define base styles for widget and optional styles
+for different states. Icon for widget injecting as background image,
 so remember about left padding for appropriate positioning.
 
 Possible states are: `synchronized`, `disconnected`, `wait`, `sending`,
 `connecting`, `error`, `protocolError`. Use states as keys in `styles`
-object with value of object with desired styles.
+object to define desired styles for states.
 
 ```js
   styles: {
