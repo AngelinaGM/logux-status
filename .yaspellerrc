@@ -15,6 +15,7 @@
     "favicon",
     "colorized",
     "Subprotocol",
-    "JS"
+    "JS",
+    "CrossTabClient"
   ]
 }
