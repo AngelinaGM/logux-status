@@ -48,7 +48,7 @@
     "yaspeller": "yaspeller-ci *.md docs/*.html test/demo/*.html",
     "spellcheck": "yarn run docs && yarn run yaspeller",
     "clean": "rimraf docs/ coverage/ bundle/ test/demo/build/",
-    "lint": "eslint *.js test/*.js",
+    "lint": "eslint *.js test/{**/,}*.js",
     "docs": "jsdoc --configure .jsdocrc *.js",
     "test": "jest --coverage && yarn run lint && yarn run spellcheck",
     "presize": "webpack index.js bundle/index.js",
