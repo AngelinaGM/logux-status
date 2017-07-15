@@ -62,7 +62,7 @@
         "badge/en.js",
         "badge/default.js"
       ],
-      "limit": "2.5KB"
+      "limit": "2.6KB"
     }
   ],
   "jest": {
