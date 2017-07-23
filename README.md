@@ -6,8 +6,8 @@
 UX best practices to report Logux synchronization status to user.
 
 ```js
-var Client = require('logux-client/client')
-var client = new Client({ … })
+var CrossTabClient = require('logux-client/cross-tab-client')
+var client = new CrossTabClient({ … })
 
 var attention = require('logux-status/attention')
 var confirm = require('logux-status/confirm')
