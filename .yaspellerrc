@@ -16,6 +16,7 @@
     "colorized",
     "Subprotocol",
     "JS",
-    "CrossTabClient"
+    "CrossTabClient",
+    "UI"
   ]
 }

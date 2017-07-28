@@ -220,6 +220,55 @@ function disableLogux() {
 ```
 
 
+## `status`
+
+Low-level function to display Logux synchronization status in your own UI.
+Like `badge` but with own design.
+
+```js
+var status = require('logux-status/status')
+
+status(client, {
+  synchronized: function () {
+    show('Everything is fine')
+  },
+  disconnected: function () {
+    show('We lost connection to server')
+  },
+  wait: function () {
+    show('We have action for synchronization, but have no connection')
+  },
+  connecting: function () {
+    show('Connecting to server')
+  },
+  sending: function () {
+    show('Connected, sending actions to server')
+  },
+  syncError: function (error) {
+    show('Error during synchronization', error.message)
+  },
+  protocolError: function () {
+    show('You need to update client. Reload page.')
+  },
+  error: function () {
+    show('Server error during processing your action')
+  },
+  denied: function () {
+    show('Your action was denied')
+  }
+})
+```
+
+It returns a function to disable itself.
+
+```js
+var unbind = status(client, callbacks)
+function disableLogux() {
+  unbind()
+}
+```
+
+
 ## `log`
 
 Display Logux events in browser console.
