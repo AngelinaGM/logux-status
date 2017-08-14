@@ -17,6 +17,9 @@
     "Subprotocol",
     "JS",
     "CrossTabClient",
-    "UI"
+    "UI",
+    "protocolError",
+    "statusReceiver",
+    "syncError"
   ]
 }

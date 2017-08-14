@@ -228,32 +228,24 @@ Like `badge` but with own design.
 ```js
 var status = require('logux-status/status')
 
-status(client, {
-  synchronized: function () {
+status(client, function (state, details) {
+  if (state === 'synchronized') {
     show('Everything is fine')
-  },
-  disconnected: function () {
+  } else if (state === 'disconnected') {
     show('We lost connection to server')
-  },
-  wait: function () {
+  } else if (state === 'wait') {
     show('We have action for synchronization, but have no connection')
-  },
-  connecting: function () {
+  } else if (state === 'connecting') {
     show('Connecting to server')
-  },
-  sending: function () {
+  } else if (state === 'sending') {
     show('Connected, sending actions to server')
-  },
-  syncError: function (error) {
-    show('Error during synchronization', error.message)
-  },
-  protocolError: function () {
+  } else if (state === 'syncError') {
+    show('Error during synchronization', details.error.message)
+  } else if (state === 'protocolError') {
     show('You need to update client. Reload page.')
-  },
-  error: function () {
+  } else if (state === 'error') {
     show('Server error during processing your action')
-  },
-  denied: function () {
+  } else if (state === 'denied') {
     show('Your action was denied')
   }
 })
