@@ -163,9 +163,9 @@ First of all you must define base styles for widget and optional styles
 for different states. Icon for widget injecting as background image,
 so remember about left padding for appropriate positioning.
 
-Possible states are: `synchronized`, `disconnected`, `waitSync`, `sending`,
-`error`, `protocolError`. Use states as keys in `styles` object to define
-desired styles for states.
+Possible states are: `synchronized`, `disconnected`, `wait`, `sending`, `error`
+and `protocolError`. Use states as keys in `styles` object to define desired
+styles for states.
 
 ```js
   styles: {
@@ -234,8 +234,6 @@ status(client, function (state, details) {
   } else if (state === 'disconnected') {
     show('We lost connection to server')
   } else if (state === 'wait') {
-    show('New action, but they are not for synchronization')
-  } else if (state === 'waitSync') {
     show('We have action for synchronization, but have no connection')
   } else if (state === 'connecting') {
     show('Connecting to server')
@@ -244,7 +242,7 @@ status(client, function (state, details) {
   } else if (state === 'sending') {
     show('Sending actions to server')
   } else if (state === 'sendingAfterWait') {
-    show('Sending actions to server after waitSync')
+    show('Sending actions to server after disconnected')
   } else if (state === 'syncError') {
     show('Error during synchronization', details.error.message)
   } else if (state === 'protocolError') {
