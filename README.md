@@ -231,6 +231,8 @@ var status = require('logux-status/status')
 status(client, function (state, details) {
   if (state === 'synchronized') {
     show('Everything is fine')
+  } else if (state === 'synchronizedAfterWait') {
+    show('We returned from offline')
   } else if (state === 'disconnected') {
     show('We lost connection to server')
   } else if (state === 'wait') {
