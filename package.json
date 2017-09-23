@@ -1,6 +1,6 @@
 {
   "name": "logux-status",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Display Logux synchronization status in browser",
   "keywords": [
     "logux",
