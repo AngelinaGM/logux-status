@@ -3417,12 +3417,12 @@ loglevel@^1.4.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.5.0.tgz#3863984a2c326b986fbb965f378758a6dc8a4324"
 
-logux-client@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/logux-client/-/logux-client-0.2.1.tgz#37020f290bec7b1c6da41e16eb55d2c4d9dd0300"
+logux-client@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/logux-client/-/logux-client-0.2.2.tgz#4f566306f169d0bc43e6d1e961b6c9c3bb539a1f"
   dependencies:
     logux-core "^0.2.0"
-    logux-sync "^0.2.0"
+    logux-sync "^0.2.1"
     nanoevents "^1.0.2"
     nanoid "^0.2.1"
 
@@ -3432,7 +3432,7 @@ logux-core@^0.2.0:
   dependencies:
     nanoevents "^1.0.2"
 
-logux-sync@^0.2.0, logux-sync@^0.2.1:
+logux-sync@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/logux-sync/-/logux-sync-0.2.1.tgz#f3d80fba5f910fcd560ce122aff3c25001ca5a03"
   dependencies:
