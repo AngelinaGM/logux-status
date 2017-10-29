@@ -33,6 +33,7 @@
     "logux-client": "^0.2.4",
     "logux-core": "^0.2.1",
     "logux-sync": "^0.2.1",
+    "nanodelay": "^0.1.2",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2",
     "script-ext-html-webpack-plugin": "^1.8.7",
