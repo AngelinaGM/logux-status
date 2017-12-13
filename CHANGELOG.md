@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.4
+* Don’t set `disconnected` status after `protocolError`.
+
 ## 0.1.3
 * Use `alert` role on badge for better accessibility.
 
